@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+	<struts>
+	<package name="default" extends="struts-default">
+		<action name="register" class="org.donneyo.action.RegisterAction">
+			<result name="SUCCESS">/register.jsp</result>
+		</action>
+		
+		<action name="imageupload" class="org.donneyo.action.AddMovieAction">
+			<result name="SUCCESS">/AddMovie.jsp</result>
+		</action>
+		
+		<action name="register2" class="org.donneyo.action.Registration2Action">
+			<result name="SUCCEED">/registerCus.jsp</result>
+		</action>
+		<action name="Validate" class="org.donneyo.action.ValidateAction">
+			<result name="CUSTOMER">/welcomeCusPage.jsp</result>
+			<result name="ADMINISTRATOR">/welcomeAdminPage.jsp</result>
+		</action>
+		<action name="Image" class="org.donneyo.action.MovieList">
+			<result name="SUCCESS">/movieList.jsp</result>
+		</action>
+		<action name="login2" class="org.donneyo.action.Login2Action">
+			<result name="FAILURE">/loginCus.jsp</result>
+			<result name="SUCCESS">/CusHomePage.jsp</result>
+		</action>
+		<action name="login" class="org.donneyo.action.LoginAction"  method="execute">
+			<result name="FAILURE">/login.jsp</result>
+			<result name="SUCCESS">/AdminHomePage.jsp</result>
+		</action>
+		<action name="logout" class="org.donneyo.action.LoginAction" method="logout">
+			<result name="LOGOUT">/login.jsp</result>
+		</action>
+		<action name="report" class="org.donneyo.action.ReportAction">
+			<result name="REPORT">/report.jsp</result>
+		</action>
+		<action name="updatedetails" class="org.donneyo.action.UpdateAction">
+			<result name="UPDATE">/update.jsp</result>
+		</action>
+		<action name="deleterecord" class="org.donneyo.action.DeleteAction">
+			<result name="DELETE">/movieList.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,73 @@
+@charset "ISO-8859-1";
+.cover{
+ background-color: black;
+}
+#highlight:hover{
+	color: white;
+}
+
+#highlight{
+	color: white;
+}
+#show{
+    background-color:black;
+    opacity: 2.8;
+ 
+}
+
+#highlight:before{
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: white;
+  position:absolute;
+  top: 30px;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+ }
+
+ #highlight:hover::before{
+  width: 100%;
+  color: white;
+  }
+#logo{
+  padding-left:80px; 
+}
+a.nav-item{
+  display: inline-block;
+	margin-left:40px ;
+	padding-top: 0px;
+	position:relative;
+        color: white;
+}
+#navbarTogglerDemo02
+{
+    margin-left:200px;
+    font-family: 'Ubuntu Mono', monospace;
+    color:white;  
+}
+footer div.foot
+{
+  border-top: 1px solid #cccccc ; 
+  border-bottom: 1px solid #cccccc;
+  border-bottom-width: 1px; 
+  border-bottom-style: solid;
+  position: relative;
+  padding: 70px;
+  box-sizing: border-box;
+  text-align:center;
+  display: block; 
+  color:#cccccc;
+  font-family: 'Ubuntu Mono', monospace;
+}
+footer b{
+    color:purple;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+footer div ul li{
+    list-style:none;
+    margin: 0px;
+    padding: 0px;
+}
